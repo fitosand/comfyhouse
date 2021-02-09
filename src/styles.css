@@ -1,0 +1,415 @@
+.mainBoard {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap");
+
+:root {
+  --lRed: #f4d7d4;
+  --dRed: #d54a48;
+  --lpurp: #e8e6fc;
+  --dpurp: #877aef;
+  --lgreen: #e2f8f2;
+  --dgreen: #64d9ba;
+  --lyell: #fffda9;
+  --dyell: #a9a742;
+  --lblue: #d4dcf7;
+  --dblue: #1c47d7;
+  --loran: #fcefde;
+  --doran: #eda851;
+  --lgray: #d5d5d5;
+
+  --price: #38d279;
+
+  --lBackg: #f4f7f8;
+  --dgray: #5e5e5e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f4f7f8;
+}
+
+/* dash board top navbar */
+.dashNavBar {
+  /* position: absolute; */
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* width: 100%; */
+  padding: 10px 40px 0;
+  background-color: white;
+  font-size: 16px;
+  color: #57727c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav__submenu {
+  text-transform: none;
+  background-color: white;
+  font-size: 16px;
+  color: #57727c;
+  position: absolute;
+  width: 170px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  top: 70px;
+  right: 0px;
+  padding: 10px 20px;
+  margin: 5px 10px;
+}
+
+.userOptions {
+  display: "flex";
+  align-items: "center";
+}
+
+.dropDownIcon {
+  font-size: 24px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dropDownIcon:focus {
+  outline: 0;
+}
+
+.avatarPhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.topBtn {
+  border: none;
+  background-color: white;
+  padding: 35px;
+}
+
+.topBtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  border-bottom: 2px solid green;
+}
+
+.navBarBtnAct {
+  border-bottom: 2px solid green;
+}
+
+.navBarBtn {
+  border: none;
+  background-color: white;
+  /* border-bottom: 2px solid green; */
+}
+
+.lowerBoard {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.CategoryCard {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid #cad0d2;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  font-weight: bold;
+}
+
+.CategoryCard:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.userOptions {
+  display: flex;
+}
+
+.boxIcon {
+  font-size: 18px;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Col1 {
+  color: var(--dRed);
+  background-color: var(--lRed);
+}
+
+.Col2 {
+  color: var(--dblue);
+  background-color: var(--lblue);
+}
+
+.Col3 {
+  color: var(--dpurp);
+  background-color: var(--lpurp);
+}
+
+.Col4 {
+  color: var(--dyell);
+  background-color: var(--lyell);
+}
+
+.Col5 {
+  color: var(--doran);
+  background-color: var(--loran);
+}
+
+.Col6 {
+  color: var(--dgreen);
+  background-color: var(--lgreen);
+}
+
+.Col7 {
+  color: var(--dgreen);
+  background-color: var(--lgreen);
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.burgerMenu:hover {
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+}
+
+.active {
+  border-bottom: 3px solid green;
+}
+
+.left,
+.right {
+  padding: 30px 30px 35px;
+}
+
+/* Card Component Styling */
+
+.screenTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.filter {
+  border: none;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: var(--lBackg);
+  font-size: 16px;
+}
+
+.active {
+  border-bottom: 3px solid green;
+}
+
+.subsCardsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.compTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.businessCard {
+  width: 500px;
+  /* height: 150px; */
+  margin: 10px;
+  border: 1px solid #cad0d2;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  /* font-weight: bold; */
+}
+
+.businessCard:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.topLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cad0d2;
+  width: 100%;
+  height: 40px;
+  font-weight: thin;
+}
+
+.leftTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.rTop {
+  margin: 10px;
+  background-color: var(--lgreen);
+  color: var(--price);
+  padding: 4px 5px;
+  border-radius: 3px;
+}
+
+.rTopMore {
+  margin: 10px;
+  background-color: var(--lblue);
+  color: var(--dblue);
+  padding: 4px 5px;
+  border-radius: 3px;
+}
+
+.midLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cardLeftItems {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  width: 70%;
+}
+
+.boxIconLeft {
+  font-size: 18px;
+  height: 20px;
+  width: 20px;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--lgray);
+  font-size: 12px;
+}
+
+.cardDetails {
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 100;
+  font-size: 13.3px;
+}
+
+.spc {
+  padding: 3px 0;
+}
+
+.cardDetailsPrice {
+  color: var(--price);
+  font-weight: 300;
+}
+
+.businessName {
+  font-weight: bold;
+}
+
+.darkG {
+  color: var(--dgray);
+}
+
+@media screen and (max-width: 700px) {
+  .dashNavBar {
+    justify-content: center;
+    padding: 0;
+    height: 70px;
+  }
+
+  .businessCard {
+    width: 320px;
+  }
+
+  .searchBox {
+    display: none;
+  }
+
+  .userOptions {
+    display: none;
+  }
+
+  .bothBtns {
+    display: flex;
+  }
+
+  .topBtn {
+    width: 350px;
+  }
+
+  .burgerMenu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+  }
+
+  .left,
+  .right {
+    padding: 25px 0px 35px;
+    /* border-bottom: 3px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    flex-grow: 1;
+  }
+}
